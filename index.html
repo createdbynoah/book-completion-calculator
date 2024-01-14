@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Are You Done Yet?</title>
+  </head>
+  <body>
+    <header>
+      <h1>Are You Done Yet?</h1>
+    </header>
+    <main class="container">
+      <form action="">
+        <div class="form-inputs">
+          <div class="duration-container">
+            <div class="form-group">
+              <label for="duration-complete">Current Time</label>
+              <div class="time-input-group duration-complete">
+                <input
+                  type="text"
+                  name="duration-complete-hours"
+                  id="duration-complete-hours"
+                  maxlength="2"
+                  placeholder="HH"
+                  tabindex="1"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-complete-minutes"
+                  id="duration-complete-minutes"
+                  maxlength="2"
+                  placeholder="MM"
+                  tabindex="2"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-complete-seconds"
+                  id="duration-complete-seconds"
+                  maxlength="2"
+                  placeholder="SS"
+                  tabindex="3"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="duration-remain">Time Remaining</label>
+              <div class="time-input-group duration-remain">
+                <input
+                  type="text"
+                  name="duration-remain-hours"
+                  id="duration-remain-hours"
+                  maxlength="2"
+                  placeholder="HH"
+                  tabindex="4"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-remain-minutes"
+                  id="duration-remain-minutes"
+                  maxlength="2"
+                  placeholder="MM"
+                  tabindex="5"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-remain-seconds"
+                  id="duration-remain-seconds"
+                  maxlength="2"
+                  placeholder="SS"
+                  tabindex="6"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="duration-total">Total Duration</label>
+              <div class="time-input-group duration-total">
+                <input
+                  type="text"
+                  name="duration-total-hours"
+                  id="duration-total-hours"
+                  maxlength="2"
+                  placeholder="HH"
+                  tabindex="7"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-total-minutes"
+                  id="duration-total-minutes"
+                  maxlength="2"
+                  placeholder="MM"
+                  tabindex="8"
+                />
+                <span class="colon">:</span>
+                <input
+                  type="text"
+                  name="duration-total-seconds"
+                  id="duration-total-seconds"
+                  maxlength="2"
+                  placeholder="SS"
+                  tabindex="9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="pages-container">
+            <div class="form-group">
+              <label for="pages-read">Pages Read</label>
+              <input
+                type="number"
+                name="pages-read"
+                id="pages-read"
+                maxlength="4"
+              />
+            </div>
+            <div class="form-group">
+              <label for="total-pages">Total Pages</label>
+              <input
+                type="number"
+                name="total-pages"
+                id="total-pages"
+                maxlength="4"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pages-left">Pages Left</label>
+              <input
+                type="number"
+                name="pages-left"
+                id="pages-left"
+                maxlength="4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>
